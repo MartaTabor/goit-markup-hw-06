@@ -260,7 +260,6 @@ button {
 
 .subscribe-form {
   display: flex;
-  gap: 24px;
   margin-left: 80px;
   align-items: flex-end;
 }

@@ -444,23 +444,61 @@
             <use href="./images/icons.svg#icon-close-button"></use>
           </svg>
         </button>
-        <p>Leave your contacts and we will call you back</p>
-        <form name="contact_us">
-          <label for="user_name">Name</label>
-          <input id="user_name" type="text" />
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" />
-          <label for="email">Email</label>
-          <input id="email" type="email" />
-          <label for="comment">Comment</label>
-          <input id="comment" type="text" />
-          <input id="privacy_policy" type="checkbox" />
-          <label name="privacy_policy"
-            >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a></label
-          >
-        </form>
-        <button type="submit">Send</button>
+        <div class="modal-box">
+          <p class="modal-paragraph">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="modal-form" name="contact_us">
+            <div class="field-wrapper">
+              <label class="modal-label" for="user_name">Name</label>
+              <div class="input-wrapper">
+                <input class="modal-input" id="user_name" type="text" />
+                <svg class="field-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="field-wrapper">
+              <label class="modal-label" for="phone">Phone</label>
+              <div class="input-wrapper">
+                <input class="modal-input" id="phone" type="phone" />
+                <svg class="field-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="field-wrapper">
+              <label class="modal-label" for="email"
+                >Email
+                <div class="input-wrapper">
+                  <input class="modal-input" id="email" type="email" />
+                  <svg class="field-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-email-black"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <label class="comment-box" for="comment"
+              >Comment
+              <textarea
+                class="modal-input comments"
+                name="comment"
+                rows="8"
+                placeholder="Text Input"
+              ></textarea>
+            </label>
+            <label class="modal-label privacy" name="privacy_policy">
+              <input
+                class="privacy-input"
+                id="privacy_policy"
+                type="checkbox"
+              />
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="">Privacy Policy</a></label
+            >
+            <button class="modal-send-button" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

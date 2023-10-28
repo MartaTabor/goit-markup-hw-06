@@ -258,24 +258,20 @@ button {
   background-color: var(--green-color);
 }
 
-.subscribe-form {
-  display: flex;
-  margin-left: 80px;
-  align-items: flex-end;
-}
-
-.label-input {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.subscribe-label {
+.subscribe-title {
   color: var(--white-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  margin-left: 80px;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-left: 80px;
+  gap: 24px;
 }
 
 .subscribe-input {
@@ -284,35 +280,35 @@ button {
   border: 1px solid var(--white-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-right: 24px;
   background-color: transparent;
-  padding: 8px 16px;
+  padding-left: 16px;
+  color: var(--white-color);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .subscribe-input::placeholder {
   color: var(--white-color);
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.48px;
 }
 
 .subscribe-button {
-  display: inline-flex;
-  padding: 8px 24px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  gap: 16px;
+  width: 165px;
+  height: 40px;
   border-radius: 4px;
   background-color: var(--iris-color);
   color: var(--white-color);
   text-align: center;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
   cursor: pointer;
+  border: none;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -320,6 +316,7 @@ button {
 
 .send-icon {
   fill: var(--white-color);
+  margin-left: 16px;
 }
 
 .subscribe-button:hover,

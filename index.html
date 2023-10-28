@@ -448,9 +448,14 @@
         </p>
         <form class="modal-form" name="contact_us">
           <div class="field-wrapper">
-            <label class="modal-label" for="user_name">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="input-wrapper">
-              <input class="modal-input" id="user_name" type="text" />
+              <input
+                class="modal-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+              />
               <svg class="field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
@@ -474,25 +479,27 @@
               </svg>
             </div>
           </div>
-          <label class="comment-box" for="comment"
-            >Comment
+          <div class="comment-box">
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
-              class="modal-input comments"
-              id="comment"
-              rows="8"
+              class="modal-input-comments"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text Input"
             ></textarea>
-          </label>
+          </div>
           <div class="privacy-wrapper">
             <input
-              class="privacy-input hidden"
-              id="privacy_policy"
+              class="privacy-input visually-hidden"
+              id="user-privacy"
               type="checkbox"
+              value="true"
+              name="user-privacy"
             />
-            <label class="modal-label privacy" for="privacy_policy">
-              <span class="checkbox">
-                <svg width="16" height="16" class="check-icon">
-                  <use href="./images/icons.svg#icon-checkbox"></use>
+            <label class="privacy-label" for="user-privacy">
+              <span class="checkbox-span">
+                <svg width="10" height="8" class="check-icon">
+                  <use href="./images/icons.svg#icon-tick-box"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the

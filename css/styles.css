@@ -17,6 +17,8 @@
   --third-heading-weight: 500;
 }
 
+/* globals */
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--white-color);
@@ -57,16 +59,6 @@ button {
   overflow: hidden;
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.section {
-  padding: 120px 0;
-}
-
 .list {
   list-style-type: none;
   margin: 0;
@@ -75,6 +67,18 @@ button {
 
 .link {
   text-decoration: none;
+}
+
+/* computer screen styles */
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .page-header {
